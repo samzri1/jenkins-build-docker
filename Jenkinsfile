@@ -10,7 +10,7 @@ node{
     }
 
     stage('Run image') {
-        docker.image('xavki/nginx').withRun('-p 80:80') { c ->
+        docker.image('xavki/nginx').withRun('-p 30:30') { c ->
 
         sh 'docker ps'
 
